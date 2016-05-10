@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="zHG-Zh-scv" customClass="ZipCell" customModule="Weather" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="ZipCell" tableViewCell="zHG-Zh-scv" id="5kx-R3-akA">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Zip Code" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vOb-LO-bWT">
+                        <rect key="frame" x="8" y="11" width="70" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ahw-7c-qFD">
+                        <rect key="frame" x="257" y="7" width="55" height="30"/>
+                        <state key="normal" title="Remove"/>
+                        <connections>
+                            <action selector="removeTapped:" destination="zHG-Zh-scv" eventType="touchUpInside" id="8Qa-z7-2JL"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="vOb-LO-bWT" firstAttribute="top" secondItem="5kx-R3-akA" secondAttribute="topMargin" constant="3" id="17H-Qw-ZIw"/>
+                    <constraint firstItem="ahw-7c-qFD" firstAttribute="top" secondItem="5kx-R3-akA" secondAttribute="topMargin" constant="-1" id="6NG-XO-Dee"/>
+                    <constraint firstItem="ahw-7c-qFD" firstAttribute="top" secondItem="5kx-R3-akA" secondAttribute="topMargin" constant="-1" id="GlV-WI-w4S"/>
+                    <constraint firstItem="ahw-7c-qFD" firstAttribute="leading" secondItem="vOb-LO-bWT" secondAttribute="trailing" constant="179" id="Km9-cY-9Sd"/>
+                    <constraint firstAttribute="leadingMargin" secondItem="vOb-LO-bWT" secondAttribute="leading" id="Tkp-NH-Xep"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="ahw-7c-qFD" secondAttribute="bottom" constant="-2" id="cKa-5w-JOM"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="ahw-7c-qFD" secondAttribute="trailing" id="h7p-sY-V9J"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="ahw-7c-qFD" secondAttribute="bottom" constant="-2" id="jdg-MQ-RP4"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="ahw-7c-qFD" secondAttribute="trailing" id="n1m-Di-jd1"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="vOb-LO-bWT" secondAttribute="bottom" constant="3" id="xWY-zj-USd"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="GlV-WI-w4S"/>
+                        <exclude reference="Km9-cY-9Sd"/>
+                        <exclude reference="jdg-MQ-RP4"/>
+                        <exclude reference="n1m-Di-jd1"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="zipLabel" destination="vOb-LO-bWT" id="gya-K4-nah"/>
+            </connections>
+            <point key="canvasLocation" x="397" y="368"/>
+        </tableViewCell>
+    </objects>
+</document>

@@ -8,13 +8,29 @@
 
 /* Begin PBXBuildFile section */
 		E33EB07B1CDF7705003ABB95 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E33EB07A1CDF7705003ABB95 /* AppDelegate.swift */; };
-		E33EB07D1CDF7705003ABB95 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E33EB07C1CDF7705003ABB95 /* ViewController.swift */; };
+		E33EB07D1CDF7705003ABB95 /* ZipTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E33EB07C1CDF7705003ABB95 /* ZipTableViewController.swift */; };
 		E33EB0801CDF7705003ABB95 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E33EB07E1CDF7705003ABB95 /* Main.storyboard */; };
 		E33EB0831CDF7705003ABB95 /* Weather.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E33EB0811CDF7705003ABB95 /* Weather.xcdatamodeld */; };
 		E33EB0851CDF7705003ABB95 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E33EB0841CDF7705003ABB95 /* Assets.xcassets */; };
 		E33EB0881CDF7705003ABB95 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E33EB0861CDF7705003ABB95 /* LaunchScreen.storyboard */; };
 		E33EB0931CDF7705003ABB95 /* WeatherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E33EB0921CDF7705003ABB95 /* WeatherTests.swift */; };
 		E33EB09E1CDF7705003ABB95 /* WeatherUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E33EB09D1CDF7705003ABB95 /* WeatherUITests.swift */; };
+		E33EB0AC1CDF7877003ABB95 /* AddZipViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E33EB0AB1CDF7877003ABB95 /* AddZipViewController.swift */; };
+		E33EB0AF1CDF81B8003ABB95 /* ZipCode+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = E33EB0AD1CDF81B8003ABB95 /* ZipCode+CoreDataProperties.swift */; };
+		E33EB0B01CDF81B8003ABB95 /* ZipCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E33EB0AE1CDF81B8003ABB95 /* ZipCode.swift */; };
+		E33EB0B41CDF8483003ABB95 /* ZipCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E33EB0B31CDF8483003ABB95 /* ZipCell.swift */; };
+		E33EB0B61CDF8491003ABB95 /* ZipCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E33EB0B51CDF8491003ABB95 /* ZipCell.xib */; };
+		E33EB0B81CDF9D2A003ABB95 /* ZipDetailsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E33EB0B71CDF9D2A003ABB95 /* ZipDetailsTableViewController.swift */; };
+		E33EB0BA1CDF9D6F003ABB95 /* ZipDetailsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E33EB0B91CDF9D6F003ABB95 /* ZipDetailsCell.swift */; };
+		E33EB0BC1CDF9D7F003ABB95 /* ZipDetailsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E33EB0BB1CDF9D7F003ABB95 /* ZipDetailsCell.xib */; };
+		E33EB0BF1CDFB41A003ABB95 /* WeatherManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E33EB0BE1CDFB41A003ABB95 /* WeatherManager.swift */; };
+		E33EB0C21CDFB4D8003ABB95 /* WundergroundFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = E33EB0C11CDFB4D8003ABB95 /* WundergroundFetcher.swift */; };
+		E33EB0C41CDFB845003ABB95 /* WeatherInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = E33EB0C31CDFB844003ABB95 /* WeatherInfo.swift */; };
+		E33EB0C81CDFCDBE003ABB95 /* AddZipTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E33EB0C71CDFCDBE003ABB95 /* AddZipTableViewController.swift */; };
+		E33EB0CA1CDFCF78003ABB95 /* ZipEntryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E33EB0C91CDFCF78003ABB95 /* ZipEntryCell.swift */; };
+		E33EB0CC1CDFCF97003ABB95 /* ZipEntryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E33EB0CB1CDFCF97003ABB95 /* ZipEntryCell.xib */; };
+		E33EB0CE1CE001B1003ABB95 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = E33EB0CD1CE001B1003ABB95 /* Reachability.swift */; };
+		E33EB0D01CE16B39003ABB95 /* WeatherManagerErrorHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E33EB0CF1CE16B39003ABB95 /* WeatherManagerErrorHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +53,7 @@
 /* Begin PBXFileReference section */
 		E33EB0771CDF7705003ABB95 /* Weather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Weather.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E33EB07A1CDF7705003ABB95 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E33EB07C1CDF7705003ABB95 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E33EB07C1CDF7705003ABB95 /* ZipTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZipTableViewController.swift; sourceTree = "<group>"; };
 		E33EB07F1CDF7705003ABB95 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E33EB0821CDF7705003ABB95 /* Weather.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Weather.xcdatamodel; sourceTree = "<group>"; };
 		E33EB0841CDF7705003ABB95 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -49,6 +65,22 @@
 		E33EB0991CDF7705003ABB95 /* WeatherUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WeatherUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E33EB09D1CDF7705003ABB95 /* WeatherUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherUITests.swift; sourceTree = "<group>"; };
 		E33EB09F1CDF7705003ABB95 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E33EB0AB1CDF7877003ABB95 /* AddZipViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddZipViewController.swift; sourceTree = "<group>"; };
+		E33EB0AD1CDF81B8003ABB95 /* ZipCode+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "ZipCode+CoreDataProperties.swift"; path = "Core Data/ZipCode+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		E33EB0AE1CDF81B8003ABB95 /* ZipCode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ZipCode.swift; path = "Core Data/ZipCode.swift"; sourceTree = "<group>"; };
+		E33EB0B31CDF8483003ABB95 /* ZipCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZipCell.swift; sourceTree = "<group>"; };
+		E33EB0B51CDF8491003ABB95 /* ZipCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZipCell.xib; sourceTree = "<group>"; };
+		E33EB0B71CDF9D2A003ABB95 /* ZipDetailsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZipDetailsTableViewController.swift; sourceTree = "<group>"; };
+		E33EB0B91CDF9D6F003ABB95 /* ZipDetailsCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZipDetailsCell.swift; sourceTree = "<group>"; };
+		E33EB0BB1CDF9D7F003ABB95 /* ZipDetailsCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZipDetailsCell.xib; sourceTree = "<group>"; };
+		E33EB0BE1CDFB41A003ABB95 /* WeatherManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherManager.swift; sourceTree = "<group>"; };
+		E33EB0C11CDFB4D8003ABB95 /* WundergroundFetcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WundergroundFetcher.swift; sourceTree = "<group>"; };
+		E33EB0C31CDFB844003ABB95 /* WeatherInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherInfo.swift; sourceTree = "<group>"; };
+		E33EB0C71CDFCDBE003ABB95 /* AddZipTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddZipTableViewController.swift; sourceTree = "<group>"; };
+		E33EB0C91CDFCF78003ABB95 /* ZipEntryCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZipEntryCell.swift; sourceTree = "<group>"; };
+		E33EB0CB1CDFCF97003ABB95 /* ZipEntryCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZipEntryCell.xib; sourceTree = "<group>"; };
+		E33EB0CD1CE001B1003ABB95 /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
+		E33EB0CF1CE16B39003ABB95 /* WeatherManagerErrorHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherManagerErrorHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,13 +131,21 @@
 		E33EB0791CDF7705003ABB95 /* Weather */ = {
 			isa = PBXGroup;
 			children = (
+				E33EB0C01CDFB463003ABB95 /* Weather Manager */,
+				E33EB0B21CDF846C003ABB95 /* Cells */,
+				E33EB0B11CDF81BE003ABB95 /* Core Data */,
+				E33EB0AB1CDF7877003ABB95 /* AddZipViewController.swift */,
 				E33EB07A1CDF7705003ABB95 /* AppDelegate.swift */,
-				E33EB07C1CDF7705003ABB95 /* ViewController.swift */,
-				E33EB07E1CDF7705003ABB95 /* Main.storyboard */,
 				E33EB0841CDF7705003ABB95 /* Assets.xcassets */,
-				E33EB0861CDF7705003ABB95 /* LaunchScreen.storyboard */,
 				E33EB0891CDF7705003ABB95 /* Info.plist */,
+				E33EB0861CDF7705003ABB95 /* LaunchScreen.storyboard */,
+				E33EB07E1CDF7705003ABB95 /* Main.storyboard */,
 				E33EB0811CDF7705003ABB95 /* Weather.xcdatamodeld */,
+				E33EB0B71CDF9D2A003ABB95 /* ZipDetailsTableViewController.swift */,
+				E33EB07C1CDF7705003ABB95 /* ZipTableViewController.swift */,
+				E33EB0C71CDFCDBE003ABB95 /* AddZipTableViewController.swift */,
+				E33EB0CD1CE001B1003ABB95 /* Reachability.swift */,
+				E33EB0CF1CE16B39003ABB95 /* WeatherManagerErrorHelper.swift */,
 			);
 			path = Weather;
 			sourceTree = "<group>";
@@ -126,6 +166,46 @@
 				E33EB09F1CDF7705003ABB95 /* Info.plist */,
 			);
 			path = WeatherUITests;
+			sourceTree = "<group>";
+		};
+		E33EB0B11CDF81BE003ABB95 /* Core Data */ = {
+			isa = PBXGroup;
+			children = (
+				E33EB0AD1CDF81B8003ABB95 /* ZipCode+CoreDataProperties.swift */,
+				E33EB0AE1CDF81B8003ABB95 /* ZipCode.swift */,
+			);
+			name = "Core Data";
+			sourceTree = "<group>";
+		};
+		E33EB0B21CDF846C003ABB95 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				E33EB0B31CDF8483003ABB95 /* ZipCell.swift */,
+				E33EB0B51CDF8491003ABB95 /* ZipCell.xib */,
+				E33EB0B91CDF9D6F003ABB95 /* ZipDetailsCell.swift */,
+				E33EB0BB1CDF9D7F003ABB95 /* ZipDetailsCell.xib */,
+				E33EB0C91CDFCF78003ABB95 /* ZipEntryCell.swift */,
+				E33EB0CB1CDFCF97003ABB95 /* ZipEntryCell.xib */,
+			);
+			name = Cells;
+			sourceTree = "<group>";
+		};
+		E33EB0BD1CDFB3F6003ABB95 /* Wunderground */ = {
+			isa = PBXGroup;
+			children = (
+				E33EB0C11CDFB4D8003ABB95 /* WundergroundFetcher.swift */,
+			);
+			name = Wunderground;
+			sourceTree = "<group>";
+		};
+		E33EB0C01CDFB463003ABB95 /* Weather Manager */ = {
+			isa = PBXGroup;
+			children = (
+				E33EB0BD1CDFB3F6003ABB95 /* Wunderground */,
+				E33EB0BE1CDFB41A003ABB95 /* WeatherManager.swift */,
+				E33EB0C31CDFB844003ABB95 /* WeatherInfo.swift */,
+			);
+			name = "Weather Manager";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -232,9 +312,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E33EB0BC1CDF9D7F003ABB95 /* ZipDetailsCell.xib in Resources */,
 				E33EB0881CDF7705003ABB95 /* LaunchScreen.storyboard in Resources */,
+				E33EB0CC1CDFCF97003ABB95 /* ZipEntryCell.xib in Resources */,
 				E33EB0851CDF7705003ABB95 /* Assets.xcassets in Resources */,
 				E33EB0801CDF7705003ABB95 /* Main.storyboard in Resources */,
+				E33EB0B61CDF8491003ABB95 /* ZipCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,9 +342,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E33EB0AC1CDF7877003ABB95 /* AddZipViewController.swift in Sources */,
 				E33EB0831CDF7705003ABB95 /* Weather.xcdatamodeld in Sources */,
-				E33EB07D1CDF7705003ABB95 /* ViewController.swift in Sources */,
+				E33EB0BF1CDFB41A003ABB95 /* WeatherManager.swift in Sources */,
+				E33EB0C81CDFCDBE003ABB95 /* AddZipTableViewController.swift in Sources */,
+				E33EB07D1CDF7705003ABB95 /* ZipTableViewController.swift in Sources */,
+				E33EB0C21CDFB4D8003ABB95 /* WundergroundFetcher.swift in Sources */,
+				E33EB0CA1CDFCF78003ABB95 /* ZipEntryCell.swift in Sources */,
 				E33EB07B1CDF7705003ABB95 /* AppDelegate.swift in Sources */,
+				E33EB0CE1CE001B1003ABB95 /* Reachability.swift in Sources */,
+				E33EB0B01CDF81B8003ABB95 /* ZipCode.swift in Sources */,
+				E33EB0AF1CDF81B8003ABB95 /* ZipCode+CoreDataProperties.swift in Sources */,
+				E33EB0D01CE16B39003ABB95 /* WeatherManagerErrorHelper.swift in Sources */,
+				E33EB0C41CDFB845003ABB95 /* WeatherInfo.swift in Sources */,
+				E33EB0B81CDF9D2A003ABB95 /* ZipDetailsTableViewController.swift in Sources */,
+				E33EB0BA1CDF9D6F003ABB95 /* ZipDetailsCell.swift in Sources */,
+				E33EB0B41CDF8483003ABB95 /* ZipCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
