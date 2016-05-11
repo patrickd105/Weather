@@ -55,6 +55,10 @@ extension ZipDetailsTableViewController {
                     self.tableView.reloadData()
                 })
             }
+        } catch WeatherFetcherError.InvalidInput {
+            currentFetcherError = .InvalidInput
+            requestCompleted = true
+            tableView.reloadData()
         } catch WeatherFetcherError.NoInternetConnection {
             currentFetcherError = .NoInternetConnection
             requestCompleted = true

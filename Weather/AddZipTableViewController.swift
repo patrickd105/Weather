@@ -42,7 +42,7 @@ class AddZipTableViewController: UITableViewController {
             
             let existingZipCodes = try managedObjectContext.executeFetchRequest(fetchRequest)
             
-            if existingZipCodes.count < 1 {
+            if existingZipCodes.count < 1 && weatherManager.isZipCodeValid(newZipCode) {
                 let entityDescription = NSEntityDescription.entityForName("ZipCode", inManagedObjectContext: managedObjectContext)
                 let zipCode = NSManagedObject.init(entity: entityDescription!, insertIntoManagedObjectContext: managedObjectContext)
                 
