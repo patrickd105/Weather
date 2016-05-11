@@ -13,7 +13,7 @@
 		E33EB0831CDF7705003ABB95 /* Weather.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E33EB0811CDF7705003ABB95 /* Weather.xcdatamodeld */; };
 		E33EB0851CDF7705003ABB95 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E33EB0841CDF7705003ABB95 /* Assets.xcassets */; };
 		E33EB0881CDF7705003ABB95 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E33EB0861CDF7705003ABB95 /* LaunchScreen.storyboard */; };
-		E33EB0931CDF7705003ABB95 /* WeatherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E33EB0921CDF7705003ABB95 /* WeatherTests.swift */; };
+		E33EB0931CDF7705003ABB95 /* WeatherManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E33EB0921CDF7705003ABB95 /* WeatherManagerTests.swift */; };
 		E33EB09E1CDF7705003ABB95 /* WeatherUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E33EB09D1CDF7705003ABB95 /* WeatherUITests.swift */; };
 		E33EB0AC1CDF7877003ABB95 /* AddZipViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E33EB0AB1CDF7877003ABB95 /* AddZipViewController.swift */; };
 		E33EB0AF1CDF81B8003ABB95 /* ZipCode+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = E33EB0AD1CDF81B8003ABB95 /* ZipCode+CoreDataProperties.swift */; };
@@ -60,7 +60,7 @@
 		E33EB0871CDF7705003ABB95 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E33EB0891CDF7705003ABB95 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E33EB08E1CDF7705003ABB95 /* WeatherTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WeatherTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		E33EB0921CDF7705003ABB95 /* WeatherTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherTests.swift; sourceTree = "<group>"; };
+		E33EB0921CDF7705003ABB95 /* WeatherManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherManagerTests.swift; sourceTree = "<group>"; };
 		E33EB0941CDF7705003ABB95 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E33EB0991CDF7705003ABB95 /* WeatherUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WeatherUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E33EB09D1CDF7705003ABB95 /* WeatherUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherUITests.swift; sourceTree = "<group>"; };
@@ -153,7 +153,7 @@
 		E33EB0911CDF7705003ABB95 /* WeatherTests */ = {
 			isa = PBXGroup;
 			children = (
-				E33EB0921CDF7705003ABB95 /* WeatherTests.swift */,
+				E33EB0921CDF7705003ABB95 /* WeatherManagerTests.swift */,
 				E33EB0941CDF7705003ABB95 /* Info.plist */,
 			);
 			path = WeatherTests;
@@ -365,7 +365,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E33EB0931CDF7705003ABB95 /* WeatherTests.swift in Sources */,
+				E33EB0931CDF7705003ABB95 /* WeatherManagerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
